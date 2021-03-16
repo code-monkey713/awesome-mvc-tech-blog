@@ -11,11 +11,21 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">Express Note Taker
-    </a>
-  </nav>
-  <div class="container">
+  <ul class="nav nav-pills nav-justified">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Much longer nav link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </li>
+  </ul>
+  
     <div style="margin-top: 80px;" class="jumbotron text-center">
       <h1 class="display-4">Note Taker <span role="img" aria-label="Memo">📝</span></h1>
       <h4 class="mt-4">Take notes with Express</h4>
@@ -24,6 +34,9 @@
     <footer class="text-center">
       <p>| <a href="/api/notes" target="_blank">API Notes Link</a> |</p>
     </footer>
+
+  <div>
+    
   </div>
   <script src="/assets/index.js"></script>
 </body>
