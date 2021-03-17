@@ -1,3 +1,2 @@
-DROP DATABASE IF EXISTS dish_db;
-
-CREATE DATABASE dish_db;
+DROP DATABASE IF EXISTS crowdfund_db;
+CREATE DATABASE crowdfund_db;
