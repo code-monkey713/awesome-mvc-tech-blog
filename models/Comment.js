@@ -29,15 +29,15 @@ Comment.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    postID: {
+    post_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: 'posts',
+        model: 'post',
         key: 'id',
       },
     },
-    userID: {
+    user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
