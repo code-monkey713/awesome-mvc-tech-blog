@@ -1,3 +1,5 @@
+// const { response } = require("express");
+
 async function signupHandler(e){
   e.preventDefault();
 
@@ -8,7 +10,21 @@ async function signupHandler(e){
   // console.log(`name:${name} / email:${email} / password:${password}`);
 
   if (name && email && password){
-    
+    const res = await fetch('/api/users', {
+      method: 'POST',
+      body: JSON.stringify({
+        name,
+        email,
+        password
+      }),
+      headers: { 'Content-Type': 'application/json' }
+    });
+    if (res.ok){
+      console.log('It was created successful.');
+      document.location.replace('/dashboard');
+    } else {
+      console.log(res.statusText);
+    }
   }
 
 }
