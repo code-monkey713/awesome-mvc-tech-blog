@@ -51,14 +51,6 @@ router.get("/dashboard", withAuth, async (req, res) => {
   }
 });
 
-router.get('/login', (req, res) => {
-  if (req.session.loggedIn){
-    // res.redirect('/posts');
-    console.log('session is logged in');
-  }
-  res.render('login');
-});
-
 router.get('/signup', (req, res) => {
   res.render('signup');
 });
@@ -139,7 +131,6 @@ router.get("/login", (req, res) => {
     res.redirect("/dashboard");
     return;
   }
-
   res.render("login");
 });
 

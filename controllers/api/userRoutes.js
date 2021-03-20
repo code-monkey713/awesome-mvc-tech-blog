@@ -1,17 +1,18 @@
 const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
+const bcrypt = require("bcrypt");
 const withAuth = require('../../utils/auth');
 
-router.get('/', async (req, res) => {
-  User.findAll({
-    attributes: { exclude: ['[password']}
-  })
-  .then(dbUser => res.json(dbUser))
-  .catch(err => {
-    console.log(err);
-    res.status(500).json(err);
-  })
-});
+// router.get('/', async (req, res) => {
+//   User.findAll({
+//     attributes: { exclude: ['[password']}
+//   })
+//   .then(dbUser => res.json(dbUser))
+//   .catch(err => {
+//     console.log(err);
+//     res.status(500).json(err);
+//   })
+// });
 
 router.get("/:id", (req, res) => {
   User.findOne({
@@ -85,7 +86,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.post("/login", (req, res) => {
+router.post("/login", async (req, res) => {
   // User.findOne({
   //   where: {
   //     email: req.body.email,
