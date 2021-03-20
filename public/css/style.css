@@ -1,0 +1,160 @@
+.customHeader {
+  background-color: #e3f2fd;
+}
+
+.btn-group {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar-brand {
+  float: right;
+  font-size: xx-large;
+}
+
+#newPostBtn {
+  margin: 20px;
+  width: 90%;
+}
+
+/* login page CSS styles */
+.login-form {
+  width: 340px;
+  margin: 50px auto;
+  font-size: 15px;
+}
+
+.login-form form {
+  margin-bottom: 15px;
+  background: #f7f7f7;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+.login-form h2 {
+  margin: 0 0 15px;
+}
+
+.form-control, .btn {
+  min-height: 38px;
+  border-radius: 2px;
+}
+
+.btn {        
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#postContainer {
+  height: 90vh;
+  margin: auto;
+  overflow-y: auto;
+}
+
+#postScroller {
+  height: 600px;
+  border: 2px black solid;
+  overflow-y: auto;
+}
+
+.card {
+  border: 5px solid turquoise;
+  border-radius: 10px;
+  margin: 10px;
+  /* text-align: center; */
+}
+
+#postPreviewCards {
+  width: 100%;
+}
+
+#postPreviewCards .card-body {
+  overflow-y: auto;
+  height: 2rem;
+  background-color: lightgray;
+}
+
+#postPreviewCards #loginCard,
+#signUpCard {
+  justify-content: center;
+}
+
+#postDashboardCards {
+  width: 90%;
+}
+
+#postDashboardCards .card-body {
+  background-color: lightgrey;
+  color: blue;
+}
+
+#newPostCard {
+  background-color: lightgray;
+  padding: 20px;
+}
+
+#postCard {
+  padding: 20px;
+  background-color: lightgray;
+}
+
+#postCardHeader {
+  padding: 15px;
+}
+#postCardBody {
+  padding: 15px;
+  border: 1px solid black;
+  height: 400px;
+  overflow-y: auto;
+  background-color: white;
+}
+#postCardFooter {
+  padding: 15px;
+  background-color: lightsteelblue;
+}
+
+#loginForm,
+#signUpForm {
+  padding: 20px;
+  height: 28rem;
+  width: auto;
+}
+
+#newPostForm {
+  padding: 20px;
+}
+
+#newPostBtn {
+  background-color: blue;
+  padding-top: 5px;
+  margin: 0px;
+  width: 100%;
+  justify-content: center;
+}
+
+#welcomeTitle {
+  margin: 20px;
+}
+
+#commentCardBody {
+  background-color: silver;
+}
+
+#commentDiv {
+  background-color: silver;
+  border-bottom: 1px solid darkblue;
+  padding: 10px;
+}
+
+.customFooter {
+  background-color: #e3f2fd;
+  padding-top: 4px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 30px;
+  color: white;
+  text-align: center;
+}
