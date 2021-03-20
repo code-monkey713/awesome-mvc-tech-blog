@@ -1,3 +1,4 @@
+const { hash } = require("bcrypt");
 const { User } = require("../models");
 
 const userData = [
@@ -13,12 +14,12 @@ const userData = [
   },
   {
     name: "Pamela",
-    email: "Pamela@email.com",
+    email: "pamela@email.com",
     password: "password1",
   },
   {
-    name: "Tony",
-    email: "tony@email.com",
+    name: "Sofia",
+    email: "sofia@email.com",
     password: "password1",
   },
   {
