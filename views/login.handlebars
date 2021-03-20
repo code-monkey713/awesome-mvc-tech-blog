@@ -1,29 +1,84 @@
-<div class="row">
-  <div class="col-md-7">
-    <h2>Login</h2>
-
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">email:</label>
-        <input class="form-input" type="text" id="email-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">password:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">Log In</button>
-      </div>
-    </form>
+<div class="form-row justify-content-md-center">
+  <div class="col-sm-4">
+    <div class="card mx-auto" id="loginCard">
+      <form id="loginForm">
+        <h2 class="col-sm-12" style="text-align: center;">Log In</h2>
+        <br />
+        <div class="form-group col-sm-12">
+          <label for="loginEmail">Email: </label>
+          <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp"
+            placeholder="Email">
+        </div>
+        <div class="form-group col-sm-12">
+          <label for="loginPassword">Password: </label>
+          <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+        </div>
+        <br />
+        <div class="form-group col-sm-12">
+          <button type="submit" class="btn btn-primary btn-block" id="loginBtn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card mx-auto" id="signUpCard">
+      <form id="signUpForm">
+        <h2 class="col-sm-12" style="text-align: center;">Sign Up Instead</h2>
+        <br />
+        <div class="form-group col-sm-12">
+          <label for="signUpName">Name</label>
+          <input type="text" class="form-control" id="signUpName" placeholder="Name">
+        </div>
+        <div class="form-group col-sm-12">
+          <label for="signUpEmail">Email</label>
+          <input type="email" class="form-control" id="signUpEmail" aria-describedby="emailHelp"
+            placeholder="Email">
+        </div>
+        <div class="form-group col-sm-12">
+          <label for="signUpPassword">Password</label>
+          <input type="password" class="form-control" id="signUpPassword" placeholder="Password">
+        </div>
+        <br />
+        <div class="form-group col-sm-12">
+          <button type="submit" class="btn btn-primary btn-block" id="signUpBtn">Submit</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
-<div>
-  <h3>
-    <a class="login-link" href="./signup">
-      Sign Up Instead!
-    </a>
-      
-  </h3>
+
+<div class="modal fade" id="loginFailModal" tabindex="-1" role="dialog" aria-labelledby="loginFailModalTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginFailModalTitle">Login Error</h5>
+        <button type="button" id="failModalCloseBtn" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Failed to log in with these credentials. Please try again.</p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<script src="./js/login.js"></script>
+<div class="modal fade" id="signupFailModal" tabindex="-1" role="dialog" aria-labelledby="signupFailModalTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupFailModalTitle">Login Error</h5>
+        <button type="button" id="failModalCloseBtn" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Failed to sign up with these credentials. Please try again.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/login.js"></script>

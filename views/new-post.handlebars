@@ -1,15 +1,31 @@
-<div class="card">
-    <h3 class="card-header">Create New Post</h3>
-    <form class="card-body new-post-form" id="new-post-form">
-        <label for="post-title" class="form-label">Title</label>
-        <input type="text" id="post-title" name="post-title" class="form-input" />
-
-
-        <label class="form-label" for="content">Content</label>
-        <input id="content" name="content" class="form-input" />
-
-        <button type="submit" class="btn">Create</button>
-    </form>
+<div class="form-row justify-content-md-center">
+  <div class="col-sm-9">
+    <div class="card mx-auto" id="newPostCard">
+      <form id="newPostForm" class="justify-content-md-center">
+        <h2 class=" col-sm-12" style="text-align: center;">Post here!</h2>
+        <div></div>
+        <div class="form-group col-sm-12">
+          <label for="newPostAuthor">User</label>
+          <input type="text" class="form-control" id="newPostAuthor" aria-describedby="authorHelp" readonly
+            placeholder="{{{name}}}">
+        </div>
+        <div class="form-group col-sm-12">
+          <label for="newPostTitle">Title</label>
+          <input type="text" class="form-control" id="newPostTitle" aria-describedby="newPostHelp"
+            placeholder="Heading for the post">
+        </div>
+        <div class="form-group col-sm-12">
+          <label for="newPostText">Write out your post</label>
+          <textarea class="form-control" id="newPostText" placeholder="Keep it under 255 characters! Unlike Twitter..."
+            rows="9"></textarea>
+        </div>
+        <div></div>
+        <div class="form-group col-sm-12">
+          <button type="submit" class="btn btn-danger btn-block align-center" id="loginBtn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
 
-<script src="/js/add-post.js"></script>
+<script src="./js/newPost.js"></script>
